@@ -11,7 +11,6 @@ class Perform(BaseModel):
     exerciseType: str
     exerciseName: str
     repetitionCount: int
-    numberOfDays: int
 
     def to_json(self):
         return jsonable_encoder(self, exclude_none=True)
